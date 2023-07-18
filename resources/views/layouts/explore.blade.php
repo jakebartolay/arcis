@@ -1,90 +1,41 @@
 <section id="explore">
-<div class="container">
-    <div class="padding-height">
-    <h1 class="fw-bolder text-center">Explore</h1>
-    <div class="line"></div>
-    <p class="display-6 fs-6 text-center">Support hundreds of Filipino creators and artist-or <a href="/register" class="">be a creator yourself</a></p>
-    </div>
     <div class="container">
-        <div class=" d-flex justify-content-center mt-5 mb-5">
-            <div class="input-field">
-                <input placeholder="Search Creator" class="form-controll p-2" />
-                <button class="btn btn1"><i class="bi bi-search"></i></button>
+        <div class="padding-height">
+            <h1 class="fw-bolder text-center">Explore</h1>
+            <div class="line"></div>
+            <p class="display-6 fs-6 text-center">Support hundreds of Filipino creators and artist-or <a href="/register" class="">be a creator yourself</a></p>
+        </div>
+        <div class="container">
+            <div class=" d-flex justify-content-center mt-5 mb-5">
+                <div class="input-field">
+                    <input placeholder="Search Creator" class="form-controll p-2" />
+                    <button class="btn btn1"><i class="bi bi-search"></i></button>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="row row-cols-3 g-4">
-        <div class="col-lg-4 col-6">
-            <div class="card">
-                <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/041.webp" class="card-img-top" alt="Hollywood Sign on The Hill">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">
-                        This is a longer card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4 col-6">
-            <div class="card">
-                <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/042.webp" class="card-img-top" alt="Palm Springs Road">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">
-                        This is a longer card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4 col-6">
-            <div class="card">
-                <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/043.webp" class="card-img-top" alt="Los Angeles Skyscrapers">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4 col-6">
-            <div class="card">
-                <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/044.webp" class="card-img-top" alt="Skyscrapers">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">
-                        This is a longer card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4 col-6">
-            <div class="card">
-                <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/046.webp" class="card-img-top" alt="Skyscrapers">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">
-                        This is a longer card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4 col-6">
-            <div class="card">
-                <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/050.webp" class="card-img-top" alt="Skyscrapers">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">
-                        This is a longer card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.
-                    </p>
+        <div class="row">
+            <div class="col-lg-3 col-12">
+                <div class="card profile-card">
+                    <div class="background-block">
+                        <img src="https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="profile-sample1" class="background" />
+                    </div>
+                    <div class="profile-thumb-block">
+                        <img src="https://as1.ftcdn.net/v2/jpg/00/57/04/58/1000_F_57045887_HHJml6DJVxNBMqMeDqVJ0ZQDnotp5rGD.jpg" alt="profile-image" class="profile" />
+                    </div>
+                    <div class="card-content">
+                        <h2>name test<small>about test</small></h3>
+                            <div class="icon-block">
+                                <a href="#"><i class="bi bi-facebook"></i>
+                                </a>
+                                <a href="#"><i class="bi bi-twitter"></i>
+                                </a>
+                                <a href="#"><i class="bi bi-instagram"></i>
+                                </a>
+                            </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 </section>

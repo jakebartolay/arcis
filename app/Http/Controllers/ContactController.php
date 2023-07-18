@@ -25,6 +25,6 @@ class ContactController extends Controller
             $message->subject('Sent Throught Contact Us');
         });
         
-        return redirect('/contact')->with('success', 'email send!');
+        return redirect('index')->with('success', 'email send!');
     }
 }

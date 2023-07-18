@@ -13,7 +13,7 @@
       </div>
 
       <div class="col-12 text-center">
-        <a class="button-modern text-uppercase" href="/register">
+        <a class="button-modern text-uppercase" href="/registration">
           Start a page
 </a>
       </div>

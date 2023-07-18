@@ -1,4 +1,4 @@
-<section id="contact">
+<section id="contact" style="height: 100vh;">
 <div class="container">
     <div class="padding-height">
     <h1 class="fw-bolder text-center">Contact us</h1>
@@ -6,7 +6,7 @@
     <p class="display-6 fs-6 text-center">Your Feedback about Home Page</p>
     </div>
     <div class="row justify-content-center">
-      <div class="col-md-4 mt-5 rounded ">
+      <div class="col-md-4 rounded ">
         <h5 class="text-center text-success"></h5>
         <form action="/" method="POST" id="form-box" class="p-2">
         @csrf
