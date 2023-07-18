@@ -1,0 +1,375 @@
+/* ICONS */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+/* FONTS FAMILY */
+@import url("https://fonts.cdnfonts.com/css/share-techmono-2");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Share-TechMono", sans-serif;
+}
+
+/* SEARCH BUTTON DESIGN */
+
+.form-controll {
+    height: 50px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 20px;
+    font-size: 12px;
+    position: relative;
+    border: 2px solid #000;
+}
+
+.btn1 {
+    align-items: center;
+    position: absolute;
+    height: 45px;
+    width: 45px;
+    border: none;
+}
+
+.input-field {
+    position: relative;
+}
+.input-field button {
+    position: absolute;
+    top: 3px;
+    right: 1px;
+    color: #000000;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/* TITLE DESIGN */
+
+.padding-height {
+  padding: 110px 0px 0px 0px;
+}
+
+.page-title {
+  font-size: 30px;
+  text-align: start;
+  font-weight: 600;
+  color: rgb(61, 61, 61);
+  padding-bottom: 50px;
+  font-family: "Share-TechMono", sans-serif;
+}
+
+.line {
+  width: 120px;
+  height: 2px;
+  background-color: rgb(119, 114, 114);
+  margin: 16px auto 0 auto;
+  margin-bottom: 30px;
+}
+
+/*  */
+/* ===== NAVBAR SECTION ===== */
+
+.navbar-brand {
+  color: white;
+  font-family: "Share-TechMono", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+
+.nav-menu {
+  background: #fff;
+  position: fixed;
+  padding: 10px;
+  width: 100%;
+  z-index: 9999;
+
+  transition: all .4s;
+}
+
+@media (max-width:34em) {
+  .nav-menu {
+      background: #ffffff !important;
+  }
+}
+
+.nav-item {
+  padding: 0 10px;
+}
+
+.menu-item {
+  font-family: "Share-TechMono", sans-serif;
+  font-size: 15px;
+  letter-spacing: 2px;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+}
+
+@media (max-width: 34em) {
+  .menu-item {
+      padding: 10px 10px 10px;
+  }
+}
+
+.navbar-toggler {
+  cursor: pointer;
+  outline: 0;
+}
+
+.ham {
+  transition: width 0.3s;
+  background: #000000;
+}
+
+.line1, .line3  {
+  width: 28px;
+  height: 2px;
+  margin: 6px;    
+  transition:  0.4s;
+}
+
+.change .line1 {
+  transform: rotate(-45deg) translate(-3px, 2px);
+}
+
+.change .line3 {
+  transform: rotate(45deg) translate(-3px, -2px);
+}
+
+.menu-item:hover {
+  color: rgb(145, 145, 145);
+}
+
+.nav-active {
+  color: rgb(0, 0, 0);
+}
+
+.dropdown-item {
+  font-family: "Share-TechMono", sans-serif;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+.costum-navbar {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #ffffff !important;  
+  position: fixed;
+}
+
+/* ===== END OF NAVBAR SECTION ===== */
+
+
+/* ===== HERO SECTION ===== */
+
+.hero-section {
+  background: linear-gradient(
+    rgba(0, 0, 0, .7), 
+    rgba(0, 0, 0, .6));
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-hero {
+  font-family: "Share-TechMono", sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.sub-text-hero {
+  font-family: "Share-TechMono", sans-serif;
+  color: orange;
+}
+
+.nav-bottom {
+  background: transparent !important;
+  padding: 30px;
+  position: absolute;
+  width: 100%;
+  
+  bottom: 10px;
+}
+
+.item-bottom {
+  padding: 0 20px;
+  transition: .2s;
+  font-size: 20px;
+}
+
+.item-bottom:hover {
+  background: transparent;
+  transform: translateY(-2px);
+}
+
+/* ===== END OF HERO SECTION ===== */
+
+/* BUTTON ANIMATION */
+
+.button-modern {
+    background-color: #fff;
+    border: 2px solid #0084ff;
+    /* border-radius: 30px; */
+    box-shadow: #422800 4px 4px 0 0;
+    color: #422800;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 0 0px;
+    line-height: 35px;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-modern:hover {
+    background-color: #0084ff;
+    color: #fff;
+}
+
+.button-modern:active {
+    box-shadow: #4267b2 1px 1px 0 0;
+    transform: translate(1px, 1px);
+}
+
+@media (min-width: 768px) {
+    .button-modern {
+        min-width: 120px;
+        padding: 0 25px;
+    }
+}
+
+/* ABOUT CEO */
+.responsive-cell-block {
+  min-height: 75px;
+}
+
+.text-blk {
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  line-height: 25px;
+}
+
+.responsive-container-block {
+  min-height: 75px;
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
+  justify-content: space-evenly;
+}
+
+.team-head-text {
+  font-size: 48px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.team-head-text {
+  line-height: 50px;
+  width: 100%;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 50px;
+  margin-left: 0px;
+}
+
+.containerr {
+  max-width: 1380px;
+  margin-top: 60px;
+  margin-right: auto;
+  margin-bottom: 60px;
+  margin-left: auto;
+  padding-top: 0px;
+  padding-right: 30px;
+  padding-bottom: 0px;
+  padding-left: 30px;
+}
+
+.card-box {
+  text-align: center;
+  box-shadow: #422800 10px 10px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;  
+  padding-right: 25px;
+  padding-bottom: 30px;
+  padding-left: 25px;
+  border: 1px solid #0084ff;
+}
+
+.card-containerr {
+  width: 280px;
+  margin-top: 0px;
+  margin-right: 10px;
+  margin-bottom: 25px;
+  margin-left: 10px;
+}
+
+.name {
+  margin-top: 20px;
+  margin-right: 0px;
+  margin-bottom: 5px;
+  margin-left: 0px;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.position {
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 10px;
+  margin-left: 0px;
+}
+
+.feature-text {
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 20px;
+  margin-left: 0px;
+  color: rgb(122, 122, 122);
+  line-height: 30px;
+}
+
+.social-icons {
+  width: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.team-image-wrapper {
+  clip-path: circle(50% at 50% 50%);
+  width: 130px;
+  height: 130px;
+}
+
+.team-member-image {
+  max-width: 100%;
+  border: 2px solid #000;
+  border-radius: 50%;
+}
+
+@media (max-width: 500px) {
+  .card-containerr {
+    width: 100%;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 25px;
+    margin-left: 0px;
+  }
+}
