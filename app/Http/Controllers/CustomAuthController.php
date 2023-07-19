@@ -64,7 +64,7 @@ class CustomAuthController extends Controller
     public Function logout(){
         if(Session::has('loginId')){
             Session::pull('loginId');
-            return redirect('/');
+            return redirect('login');
         }
     }
 }
