@@ -1,14 +1,8 @@
-<section>
-    <div class="container-fluid">
-        <div class="row justify-content-center align-items-center">
+<section style="height: 100vh;">
+    <div class="container-fluid mt-5">
+        <div class="row justify-content-center align-items-center mt-5">
             <div class="col-lg-12 col-12">
-                <br><br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <h1>Welcome! {{$data->name}}!</h1>
-                <hr>
+                @include('layouts/userinfo')
             </div>
         </div>
     </div>

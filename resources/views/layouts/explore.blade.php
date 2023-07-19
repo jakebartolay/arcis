@@ -14,8 +14,8 @@
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-lg-3 col-12">
+        <div class="row g-2">
+            <div class="col-lg-3 col-6">
                 <div class="card profile-card">
                     <div class="background-block">
                         <img src="https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="profile-sample1" class="background" />
@@ -24,7 +24,7 @@
                         <img src="https://as1.ftcdn.net/v2/jpg/00/57/04/58/1000_F_57045887_HHJml6DJVxNBMqMeDqVJ0ZQDnotp5rGD.jpg" alt="profile-image" class="profile" />
                     </div>
                     <div class="card-content">
-                        <h2>name test<small>about test</small></h3>
+                        <h2>test<small>about test</small></h3>
                             <div class="icon-block">
                                 <a href="#"><i class="bi bi-facebook"></i>
                                 </a>

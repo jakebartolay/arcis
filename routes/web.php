@@ -29,4 +29,5 @@ Route::post('/register-user', [CustomAuthController::class, 'registerUser'])->na
 Route::post('/login-user', [CustomAuthController::class, 'loginUser'])->name('login-user');
 
 Route::get('/profile', [CustomAuthController::class, 'userDashboard'])->middleware('isLoggedIn');
+// Route::get('/', [CustomAuthController::class, 'userUi'])->middleware('isLoggedIn');
 Route::get('/logout', [CustomAuthController::class, 'logout']);

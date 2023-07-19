@@ -43,7 +43,7 @@
                         <span class="text-danger">@error('password') {{$message}} @enderror</span>
                     </div>
                     <div class="form-group">
-                        <button class="btn btn-primary" type="submit">Login</button>
+                        <button class="btn btn-primary" type="submit">Register</button>
                     </div>
                 </form>
                 <a href="/">Go Back Home</a> || <a href="/login">Have an Acccount?</a>

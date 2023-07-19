@@ -13,7 +13,7 @@
             <ul class="navbar-nav ml-aulo">
                 @if (Session::has('loginId'))
                 <li class="nav-item">
-                    <a class="nav-link m-2 menu-item nav-active" href="/"> Home </a>
+                    <a class="nav-link m-2 menu-item nav-active" href="/"> Explore </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link m-2 menu-item" href="/profile"> Profile </a>
@@ -22,9 +22,6 @@
                     <a class="nav-link m-2 menu-item" href="/logout"> Logout </a>
                 </li>
                 @else
-                <li class="nav-item">
-                    <a class="nav-link m-2 menu-item nav-active" href="#home"> Home </a>
-                </li>
                 <li class="nav-item">
                     <a class="nav-link m-2 menu-item" href="#explore"> Explore </a>
                 </li>

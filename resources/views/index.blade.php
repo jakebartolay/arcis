@@ -8,7 +8,6 @@
 </head>
 <body>
     @include('layouts/navbar')
-    @include('layouts/hero')
     @include('layouts/explore')
     @include('layouts/about')
     @include('layouts/contact')
