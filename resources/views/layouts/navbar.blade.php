@@ -10,8 +10,11 @@
             <div class="line3 ham"></div>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="myNavbar">
-            <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav ml-aulo">
                 @if (Session::has('loginId'))
+                <li class="nav-item">
+                    <a class="nav-link m-2 menu-item nav-active" href="/"> Home </a>
+                </li>
                 <li class="nav-item">
                     <a class="nav-link m-2 menu-item" href="/profile"> Profile </a>
                 </li>
