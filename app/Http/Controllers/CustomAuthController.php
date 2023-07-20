@@ -4,10 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\User;
+use App\Models\information;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Session;
-use PhpParser\Builder\Function_;
-use PhpParser\Node\Expr\FuncCall;
+use Illuminate\Support\Facades\DB;
 
 class CustomAuthController extends Controller
 {
@@ -43,7 +43,10 @@ class CustomAuthController extends Controller
         $user = User::where('email', '=', $request->email)->first();
         if ($user) {
             if(Hash::check($request->password,$user->password)){
-                $request->session()->put('loginId',$user->id);
+                $request->session()->put('id',$user->id);
+                $request->session()->put('name',$user->name);
+                $request->session()->put('email',$user->email);
+                $request->session()->put('password',$user->password);
                 return redirect('profile');
             }else{
                 return back()->with('fail','Password not matches.');
@@ -53,32 +56,41 @@ class CustomAuthController extends Controller
         }
     }
 
-    public function userDashboard(){
-        $data = array();
-        if (Session::has('loginId')){
-            $data = User::where('id', '=', Session::get('loginId'))->first();
+    public function profileDashboard(){
+        if (session::has('id')){
+            $u = User::query()
+            ->select(DB::raw('*'))
+            ->join('information', 'users.id', '=', 'information.info_id')
+            ->where("info_id", "=", Session::get("id"))
+            ->get()
+            ->first();
+            return view('profile', compact('u'));
+        }else{
+            abort(401);
         }
-        return view('profile', compact('data'));
-    }
-    public function userUi(){
-        $data = array();
-        if (Session::has('loginId')){
-            $data = User::where('id', '=', Session::get('loginId'))->first();
-        }
-        return view('profile', compact('data'));
+        // $data = array();
+        // if (Session::has('loginId')){
+        //     $data = User::where('id', '=', Session::get('loginId'))->first();
+        // }
+        // return view('profile', compact('data'));
     }
     public function userinfo(){
-        $data = array();
-        if (Session::has('loginId')){
-            $data = User::where('id', '=', Session::get('loginId'))->first();
-        }
-        return view('profile', compact('data'));
+        $user = User::query()
+        ->select('*')
+        ->where('name')
+        ->get();
+    return view('profile', compact('user'));
+        // $data = array();
+        // if (Session::has('loginId')){
+        //     $data = User::where('id', '=', Session::get('loginId'))->first();
+        // }
+        // return view('profile', compact('data'));
     }
 
     public Function logout(){
-        if(Session::has('loginId')){
-            Session::pull('loginId');
-            return redirect('/');
+        if(Session::has('id')){
+            Session::pull('id');
+            return redirect('/login');
         }
     }
 }

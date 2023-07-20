@@ -5,13 +5,12 @@
                 <div class="fb-profile-block-thumb cover-container"></div>
                 <div class="profile-img">
                     <a href="#">
-                        <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="profile pic">        
+                        <img src="img/{{$u->images}}" alt="profile pic">
                     </a>
                 </div>
                 <div class="profile-name">
-                    <h2>{{$data->name}}</h2>
+                    <h2>{{ $u->name }}</h2>
                 </div>
-                
                 <div class="fb-profile-block-menu">
                     <div class="block-menu">
                         <ul>
@@ -30,6 +29,16 @@
                         </ul>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="col-md-12">
+        <div class="card-body p-4 text-black">
+        <div class="mb-5">
+              <p class="lead fw-normal mb-1">About</p>
+              <div class="p-4" style="background-color: #f8f9fa;">
+                <p class="font-italic mb-1">{{ $u->about }}</p>
+              </div>
+            </div>
             </div>
         </div>
     </div>

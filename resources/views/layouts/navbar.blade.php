@@ -11,7 +11,7 @@
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="myNavbar">
             <ul class="navbar-nav ml-aulo">
-                @if (Session::has('loginId'))
+                @if (Session::has('id'))
                 <li class="nav-item">
                     <a class="nav-link m-2 menu-item nav-active" href="/"> Explore </a>
                 </li>
