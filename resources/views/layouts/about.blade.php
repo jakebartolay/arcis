@@ -103,7 +103,7 @@
                         <h1>BOARD OF DIRECTORS</h1>
                         <p class="text-muted para-desc mx-auto mb-0">Meet our team</p>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
+                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
                         <div class="team text-center rounded p-3 py-4">
                             <img src="https://as1.ftcdn.net/v2/jpg/00/57/04/58/1000_F_57045887_HHJml6DJVxNBMqMeDqVJ0ZQDnotp5rGD.jpg" class="img-fluid avatar avatar-medium shadow rounded-pill" width="200px" alt="">
                             <div class="content mt-3">
@@ -119,7 +119,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
+                    <div class="col-lg-4 col-md-9 col-12 mt-4 pt-2">
                         <div class="team text-center rounded p-3 py-4">
                             <img src="https://as1.ftcdn.net/v2/jpg/00/57/04/58/1000_F_57045887_HHJml6DJVxNBMqMeDqVJ0ZQDnotp5rGD.jpg" class="img-fluid avatar avatar-medium shadow rounded-pill" width="200px" alt="">
                             <div class="content mt-3">
@@ -135,7 +135,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
+                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
                         <div class="team text-center rounded p-3 py-4">
                             <img src="https://as1.ftcdn.net/v2/jpg/00/57/04/58/1000_F_57045887_HHJml6DJVxNBMqMeDqVJ0ZQDnotp5rGD.jpg" class="img-fluid avatar avatar-medium shadow rounded-pill" width="200px" alt="">
                             <div class="content mt-3">
