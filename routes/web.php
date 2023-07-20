@@ -31,4 +31,4 @@ Route::post('/login-user', [CustomAuthController::class, 'loginUser'])->name('lo
 Route::get('/profile', [CustomAuthController::class, 'profileDashboard'])->middleware('isLoggedIn');
 Route::get('/logout', [CustomAuthController::class, 'logout']);
 
-Route::get('/explore', [UserController::class, 'showUser']);
+Route::get('layouts.explore', [UserController::class, 'showUser']);

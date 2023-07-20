@@ -9,7 +9,12 @@ use Illuminate\Support\Facades\DB;
 
 class UserController extends Controller
 {
-    public function show(){
-
+    public function showUser(){
+            $user = User::query()
+            ->select(DB::raw('*'))
+            ->join('information', 'users.id', '=', 'information.info_id')
+            ->where("info_id")
+            ->get();
+            return view('index', compact('user'));
     }
 }

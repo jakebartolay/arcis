@@ -24,7 +24,7 @@
                         <img src="https://as1.ftcdn.net/v2/jpg/00/57/04/58/1000_F_57045887_HHJml6DJVxNBMqMeDqVJ0ZQDnotp5rGD.jpg" alt="profile-image" class="profile" />
                     </div>
                     <div class="card-content">
-                        <h2>test<small>about test</small></h3>
+                        <h2>{{ $user->name }}test<small>{{ $user->about }}</small></h3>
                             <div class="icon-block">
                                 <a href="#"><i class="bi bi-facebook"></i>
                                 </a>

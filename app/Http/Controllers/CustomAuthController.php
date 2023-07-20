@@ -57,7 +57,7 @@ class CustomAuthController extends Controller
     }
 
     public function profileDashboard(){
-        if (session::has('id')){
+        if (Session::has('id')){
             $u = User::query()
             ->select(DB::raw('*'))
             ->join('information', 'users.id', '=', 'information.info_id')
