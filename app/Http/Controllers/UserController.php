@@ -24,4 +24,12 @@ class UserController extends Controller
         ->get();
         return view('index', compact('user'));
 }
+
+public function nonUsershow(){
+        $user = User::query()
+        ->select(DB::raw('*'))
+        ->get()
+        ->first();
+        return view('layouts.nonuser', compact('user'));
+}
 }

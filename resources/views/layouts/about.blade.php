@@ -10,7 +10,7 @@
             <div class="container bootdey">
                 <div class="row justify-content-center">
                     <div class="col-lg-12 col-12 text-center">
-                        <h1>BOARD OF DIRECTORS</h1>
+                        <h1>Developers</h1>
                         <p class="text-muted para-desc mx-auto mb-0">Meet our team</p>
                     </div>
                     <div class="col-lg-3 col-md-12 col-12 mt-4 pt-2">

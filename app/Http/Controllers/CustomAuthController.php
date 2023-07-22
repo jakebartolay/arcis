@@ -47,7 +47,7 @@ class CustomAuthController extends Controller
                 $request->session()->put('name',$user->name);
                 $request->session()->put('email',$user->email);
                 $request->session()->put('password',$user->password);
-                return redirect('profile');
+                return redirect('/');
             }else{
                 return back()->with('fail','Password not matches.');
             }

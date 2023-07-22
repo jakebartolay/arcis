@@ -34,7 +34,7 @@ section{
   border-radius: 100px;
   white-space: nowrap;
   z-index: 999;
-  margin-left: 85%;
+  margin-left: 90%;
 }
 
 .top a:hover{
@@ -309,7 +309,7 @@ body {
 .profile-card .profile {
   border-radius: 50%;
   position: absolute;
-  bottom: 44%;
+  bottom: 45%;
   left: 50%;
   max-width: 100px;
   opacity: 1;

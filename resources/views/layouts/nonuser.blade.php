@@ -1,3 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    @include ('layouts/head')
+    <link rel="stylesheet" href="/css/index.css" />
+    <script src="/js/script.js"></script>
+    <title>Arcis | {{$user->name}}</title>
+</head>
+<body>
+@include('layouts/navbar')
 <section style="height: 93vh;">
     <div class="container-fluid mt-5">
         <div class="row justify-content-center align-items-center mt-5">
@@ -6,14 +16,14 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="fb-profile-block">
-                                <div class="fb-profile-block-thumb img-fluid"><img src="img/{{$users->background}}" alt="img/{{$users->altbg}}" class="img-fluid cover-container" /></div>
+                                <div class="fb-profile-block-thumb img-fluid"><img src="img/{{$user->background}}" alt="img/{{$user->altbg}}" class="img-fluid cover-container" /></div>
                                 <div class="profile-img">
                                     <a href="#">
-                                        <img class="img-fluid" src="img/{{$users->images}}" alt="{{$users->alt}}">
+                                        <img class="img-fluid" src="img/{{$user->images}}" alt="{{$user->alt}}">
                                     </a>
                                 </div>
                                 <div class="profile-name">
-                                    <h2>{{ $users->name }}</h2>
+                                    <h2>{{ $user->name }}</h2>
                                 </div>
                                 <div class="fb-profile-block-menu">
                                     <div class="block-menu">
@@ -40,7 +50,7 @@
                                 <div class="mb-5">
                                     <p class="lead fw-normal mb-1">About</p>
                                     <div class="p-4" style="background-color: #f8f9fa;">
-                                        <p class="font-italic mb-1">{{ $users->about }}</p>
+                                        <p class="font-italic mb-1">{{ $user->about }}</p>
                                     </div>
                                 </div>
                             </div>
@@ -51,3 +61,6 @@
         </div>
     </div>
 </section>
+@include('layouts/footer')
+</body>
+</html>
