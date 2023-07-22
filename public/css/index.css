@@ -16,6 +16,38 @@ section{
   padding:30px 0;
 }
 
+/* ===== BACK TO TOP ===== */
+
+.top {
+  --offset: 50px; 
+  
+  position: sticky;
+  bottom: 20px;      
+  place-self: end;
+  margin-top: calc(100vh + var(--offset));
+  
+  /* visual styling */
+  text-decoration: none;
+  padding: 15px;
+  color: #fff;
+  background: #232323;
+  border-radius: 100px;
+  white-space: nowrap;
+  z-index: 999;
+  margin-left: 85%;
+}
+
+.top a:hover{
+  color: #0000;
+  background-color: #fff;
+}
+
+/* remove the below if you don't want smooth scrolling */
+html,
+body {
+  scroll-behavior: smooth;
+}
+
 /* ===== CARD BUSINES TEAM SECTION ===== */
 
 .team-list img {
@@ -142,13 +174,15 @@ section{
   width: 100%;
 }
 .cover-container{
-    background: #1E90FF;
-    background: -webkit-radial-gradient(bottom, #73D6F5 12%, #1E90FF);
-    background: radial-gradient(at bottom, #73D6F5 12%, #1E90FF)
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
 }
 .fb-profile-block-thumb{
   display: block;
-  height: 315px;
+  height: 300px;
   overflow: hidden;
   position: relative;
   text-decoration: none;
@@ -166,15 +200,13 @@ section{
 	position: absolute;
 	height: 160px;
 	width: 160px;
-	background: rgba(0, 0, 0, 0.3) none repeat scroll 0 0;
 	z-index:9;
 }
 .profile-img img {
   background-color: #fff;
-  border-radius: 2px;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.07);
+  border-radius: 50%;
+  border: 2px solid #fff;
   height:158px;
-  padding: 5px;
   width:158px;
 }
 .profile-name {
@@ -189,7 +221,6 @@ section{
   line-height: 30px;
   max-width: 275px;
   position: relative;
-  text-transform: uppercase;
 }
 .fb-profile-block-menu{
   height: 44px;
@@ -246,12 +277,13 @@ section{
 }
 .profile-card .background-block .background {
   width:100%;
+  height: 100%;
   vertical-align: top;
   opacity: 0.9;
-  -webkit-filter: blur(0.5px);
-  filter: blur(0.5px);
+  -webkit-filter: blur(0.2px);
+  filter: blur(0.1px);
    -webkit-transform: scale(1.8);
-  transform: scale(2.8);
+  transform: scale(1);
 }
 .profile-card .card-content {
   width: 100%;
@@ -267,23 +299,22 @@ section{
 .profile-card .card-content::before {
     content: '';
     background: #efefef;
-    width: 120%;
+    width: 100%;
     height: 100%;
-    left: 11px;
-    bottom: 51px;
+    left: 0px;
+    bottom: 25px;
     position: absolute;
     z-index: -1;
-    transform: rotate(-13deg);
 }
 .profile-card .profile {
   border-radius: 50%;
   position: absolute;
-  bottom: 50%;
+  bottom: 44%;
   left: 50%;
   max-width: 100px;
   opacity: 1;
-  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
-  border: 2px solid rgba(255, 255, 255, 1);
+  /* IF YOU WANT BORDER */
+  border: 2px solid #efefef; 
   -webkit-transform: translate(-50%, 0%);
   transform: translate(-50%, 0%);
   z-index: 999;

@@ -4,7 +4,7 @@
     @include ('layouts/head')
     <link rel="stylesheet" href="/css/index.css" />
     <script src="/js/script.js"></script>
-    <title>Arcis</title>
+    <title>Arcis | {{$users->name}}</title>
 </head>
 <body>
     @include('layouts/navbar')

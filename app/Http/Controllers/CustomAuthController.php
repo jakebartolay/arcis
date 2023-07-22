@@ -58,13 +58,12 @@ class CustomAuthController extends Controller
 
     public function profileDashboard(){
         if (Session::has('id')){
-            $u = User::query()
+            $users = User::query()
             ->select(DB::raw('*'))
-            ->join('information', 'users.id', '=', 'information.info_id')
-            ->where("info_id", "=", Session::get("id"))
+            ->where('id', "=", Session::get("id"))
             ->get()
             ->first();
-            return view('profile', compact('u'));
+            return view('profile', compact('users'));
         }else{
             abort(401);
         }
@@ -90,7 +89,7 @@ class CustomAuthController extends Controller
     public Function logout(){
         if(Session::has('id')){
             Session::pull('id');
-            return redirect('/login');
+            return redirect('/');
         }
     }
 }

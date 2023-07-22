@@ -1,4 +1,4 @@
-<section id="contact" style="height: 100vh;">
+<section id="contact" style="height: 80vh;">
 <div class="container">
     <div class="padding-height">
     <h1 class="fw-bolder text-center">Contact us</h1>
@@ -31,7 +31,7 @@
             <textarea name="text" class="form-control" placeholder="Write your message" cols="30" rows="4" required></textarea>
           </div>
           <br>
-          <div class="form-group">
+          <div class="form-group text-center">
             <input type="submit" class="btn btn-lg btn-primary" value="Send">
           </div>
         </form>

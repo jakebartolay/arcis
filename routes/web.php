@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\CustomAuthController;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -30,5 +31,5 @@ Route::post('/login-user', [CustomAuthController::class, 'loginUser'])->name('lo
 
 Route::get('/profile', [CustomAuthController::class, 'profileDashboard'])->middleware('isLoggedIn');
 Route::get('/logout', [CustomAuthController::class, 'logout']);
-
+Route::get('/', [UserController::class, 'showUserinfo']);
 Route::get('layouts.explore', [UserController::class, 'showUser']);

@@ -11,6 +11,7 @@
     @include('layouts/explore')
     @include('layouts/about')
     @include('layouts/contact')
+    <a href="#" class="top"><i class="bi bi-chevron-double-up"></i></a>
     @include('layouts/footer')
 </body>
 </html>

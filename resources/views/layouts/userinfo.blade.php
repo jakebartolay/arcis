@@ -1,15 +1,15 @@
-<div class="container">
+<div class="container mt-2">
     <div class="row">
         <div class="col-md-12">
             <div class="fb-profile-block">
-                <div class="fb-profile-block-thumb cover-container"></div>
+                <div class="fb-profile-block-thumb"><img src="img/{{$users->background}}" alt="img/{{$users->altbg}}" class="cover-container" /></div>
                 <div class="profile-img">
                     <a href="#">
-                        <img src="img/{{$u->images}}" alt="profile pic">
+                        <img src="img/{{$users->images}}" alt="{{$users->alt}}">
                     </a>
                 </div>
                 <div class="profile-name">
-                    <h2>{{ $u->name }}</h2>
+                    <h2>{{ $users->name }}</h2>
                 </div>
                 <div class="fb-profile-block-menu">
                     <div class="block-menu">
@@ -36,7 +36,7 @@
         <div class="mb-5">
               <p class="lead fw-normal mb-1">About</p>
               <div class="p-4" style="background-color: #f8f9fa;">
-                <p class="font-italic mb-1">{{ $u->about }}</p>
+                <p class="font-italic mb-1">{{ $users->about }}</p>
               </div>
             </div>
             </div>
