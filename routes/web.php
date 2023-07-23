@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\CustomAuthController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\infoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -33,6 +34,8 @@ Route::get('/profile', [CustomAuthController::class, 'profileDashboard'])->middl
 Route::get('/logout', [CustomAuthController::class, 'logout']);
 
 
-Route::get('/profile', [UserController::class, 'nonUsershow']);
+Route::resource('/profile', infoController::class);
 Route::get('/', [UserController::class, 'showUserinfo']);
 Route::get('layouts.explore', [UserController::class, 'showUser']);
+
+Route::get('/search',[UserController::class, 'searchUser']);

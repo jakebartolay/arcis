@@ -7,10 +7,12 @@
         </div>
         <div class="container">
             <div class=" d-flex justify-content-center mt-5 mb-5">
+                <form>
                 <div class="input-field">
-                    <input placeholder="Search Creator" class="form-controll p-2" />
+                    <input placeholder="Search Creator" name="query" class="form-controll p-2" />
                     <button class="btn btn1"><i class="bi bi-search"></i></button>
                 </div>
+                </form>
             </div>
         </div>
         <div class="row g-2">
@@ -31,7 +33,7 @@
                                 <a href="{{$users->link2}}"><i class="bi bi-instagram"></i>
                                 </a>
                             </div>
-                            <a href="/profile" class="button-modern">
+                            <a href="/profile/{{$users -> name}}" class="button-modern">
                                 Visit   
                             </a>
                     </div>

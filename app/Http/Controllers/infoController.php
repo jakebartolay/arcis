@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\User;
 use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\DB;
 
 class infoController extends Controller
 {
@@ -13,16 +14,7 @@ class infoController extends Controller
      */
     public function index()
     {
-        // $data = array();
-        // if (Session::has('users')){
-        //     $data = User::where('id', '=', Session::get('loginId'))->first();
-        // }
-        // return view('userinfo', compact('data'));
-        // $info = information::query()
-        //     ->select('*')
-        //     ->orderBy('id')
-        //     ->get();
-        // return view('userinfo', compact('info'));
+        //
     }
 
     /**
@@ -44,9 +36,14 @@ class infoController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show($name)
     {
-        //
+            $users = User::query()
+            ->select(DB::raw('*'))
+            ->where('name','=', $name)
+            ->get()
+            ->first();
+            return view('layouts.usershow', compact('users'));
     }
 
     /**

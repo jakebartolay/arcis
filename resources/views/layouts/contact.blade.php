@@ -8,7 +8,7 @@
     <div class="row justify-content-center">
       <div class="col-md-4 rounded ">
         <h5 class="text-center text-success"></h5>
-        <form action="/" method="POST" id="form-box" class="p-2">
+        <form action="/contact" method="POST" id="form-box" class="p-2">
         @csrf
           <div class="form-group input-group">
             <div class="input-group-prepend">
