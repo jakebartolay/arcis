@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\User;
+use App\Models\info;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\DB;
 
@@ -39,11 +40,17 @@ class infoController extends Controller
     public function show($name)
     {
             $users = User::query()
-            ->select(DB::raw('*'))
+            ->select('*')
             ->where('name','=', $name)
             ->get()
             ->first();
-            return view('layouts.usershow', compact('users'));
+
+            $user = User::query()
+            ->select('*')
+            ->where('name','=', $name)
+            ->get()
+            ->first();
+            return view('layouts.usershow', compact('users','user'));
     }
 
     /**

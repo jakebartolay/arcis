@@ -27,6 +27,13 @@ class CustomAuthController extends Controller
         $user = new User();
         $user->name = $request->name;
         $user->email = $request->email;
+        $user->about = $request->about;
+        $user->images = $request->images;
+        $user->background = $request->background;
+        $user->altbg = $request->altbg;
+        $user->link = $request->link;
+        $user->link2 = $request->link2;
+        $user->alt = $request->alt;
         $user->password = Hash::make($request->password);
         $res = $user->save();
         if ($res) {

@@ -15,6 +15,13 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('email')->unique();
+            $table->string('about')->nullable();
+            $table->string('images')->default('default.png')->nullable();
+            $table->string('background')->default('background.jpg');
+            $table->string('altbg')->default('default background');
+            $table->string('alt')->default('default profile')->nullable();
+            $table->string('link')->nullable();
+            $table->string('link2')->nullable();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();

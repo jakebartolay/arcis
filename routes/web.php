@@ -5,6 +5,7 @@ use App\Http\Controllers\ContactController;
 use App\Http\Controllers\CustomAuthController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\infoController;
+use App\Models\information;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,14 +28,14 @@ Route::post('/contact', [ContactController::class, 'sendEmail']);
 Route::get('/login', [CustomAuthController::class, 'login'])->middleware('alreadyLoggedIn');
 Route::get('/registration', [CustomAuthController::class, 'registration'])->middleware('alreadyLoggedIn');
 
-Route::post('/register-user', [CustomAuthController::class, 'registerUser'])->name('register-user');
-Route::post('/login-user', [CustomAuthController::class, 'loginUser'])->name('login-user');
+Route::post('/registeruser', [CustomAuthController::class, 'registerUser'])->name('registeruser');
+Route::post('/loginuser', [CustomAuthController::class, 'loginUser'])->name('loginuser');
 
 Route::get('/profile', [CustomAuthController::class, 'profileDashboard'])->middleware('isLoggedIn');
 Route::get('/logout', [CustomAuthController::class, 'logout']);
 
 
-Route::resource('/profile', infoController::class);
+Route::resource('/userprofile', infoController::class);
 Route::get('/', [UserController::class, 'showUserinfo']);
 Route::get('layouts.explore', [UserController::class, 'showUser']);
 

@@ -6,10 +6,10 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="fb-profile-block">
-                                <div class="fb-profile-block-thumb img-fluid"><img src="img/{{$users->background}}" alt="img/{{$users->altbg}}" class="img-fluid cover-container" /></div>
+                                <div class="fb-profile-block-thumb img-fluid"><img src="img/userimages/{{$users->background}}" alt="img/userimages/{{$users->altbg}}" class="img-fluid cover-container" /></div>
                                 <div class="profile-img">
                                     <a href="#">
-                                        <img class="img-fluid" src="img/{{$users->images}}" alt="{{$users->alt}}">
+                                        <img class="img-fluid" src="img/userimages/{{$users->images}}" alt="{{$users->alt}}">
                                     </a>
                                 </div>
                                 <div class="profile-name">
@@ -38,7 +38,7 @@
                         <div class="col-md-12">
                             <div class="card-body p-4 text-black">
                                 <div class="mb-5">
-                                    <p class="lead fw-normal mb-1">About</p>
+                                    <p class="lead fw-normal mb-1">About{{ $users->name }}</p>
                                     <div class="p-4" style="background-color: #f8f9fa;">
                                         <p class="font-italic mb-1">{{ $users->about }}</p>
                                     </div>

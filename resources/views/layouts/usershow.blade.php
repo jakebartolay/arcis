@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,7 +12,8 @@
 <body>
     @include('layouts/navshow')
     <br><br>
-    <section style="height: 90vh;">
+
+    <section style="height: 100vh;">
         <div class="container-fluid mt-5">
             <div class="row justify-content-center align-items-center mt-5">
                 <div class="col-lg-12 col-12">
@@ -21,12 +23,12 @@
                                 <div class="fb-profile-block">
                                     <div class="fb-profile-block-thumb img-fluid">
                                         <a href="#">
-                                            <img src="img/{{$users->background}}" alt="img/{{$users->altbg}}" class="img-fluid cover-container" />
+                                            <img src="img/{{$user->background}}" alt="img/{{$user->altbg}}" class="img-fluid cover-container" />
                                         </a>
                                     </div>
                                     <div class="profile-img">
                                         <a href="#">
-                                            <img class="img-fluid" src="img/{{$users->images}}" alt="{{$users->alt}}">
+                                            <img class="img-fluid" src="img/{{$user->images}}" alt="{{$user->alt}}">
                                         </a>
                                     </div>
                                     <div class="profile-name">
@@ -55,7 +57,7 @@
                             <div class="col-md-12">
                                 <div class="card-body p-4 text-black">
                                     <div class="mb-5">
-                                        <p class="lead fw-normal mb-1">About</p>
+                                        <p class="lead fw-normal mb-1">About{{ $users->name }}</p>
                                         <div class="p-4" style="background-color: #f8f9fa;">
                                             <p class="font-italic mb-1">{{ $users->about }}</p>
                                         </div>
@@ -68,6 +70,7 @@
             </div>
         </div>
     </section>
+
     @include('layouts/footer')
 </body>
 

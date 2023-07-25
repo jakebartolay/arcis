@@ -10,10 +10,16 @@ use Illuminate\Support\Facades\DB;
 
 class UserController extends Controller
 {
+        public function showUser(){
+                $users = User::query()
+                ->select('*')
+                ->get();
+                return view('index', compact('users'));
+        }
         public function showUserinfo()
         {
                 $user = User::query()
-                        ->select(DB::raw('*'))
+                        ->select('*')
                         ->get();
                 return view('index', compact('user'));
         }
@@ -21,7 +27,7 @@ class UserController extends Controller
         public function nonUsershow()
         {
                 $user = User::query()
-                ->select(DB::raw('*'))
+                ->select('*')
                 ->get();
                 return view('layouts.usershow', compact('user'));
         }

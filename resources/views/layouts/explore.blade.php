@@ -8,37 +8,39 @@
         <div class="container">
             <div class=" d-flex justify-content-center mt-5 mb-5">
                 <form>
-                <div class="input-field">
-                    <input placeholder="Search Creator" name="query" class="form-controll p-2" />
-                    <button class="btn btn1"><i class="bi bi-search"></i></button>
-                </div>
+                    <div class="input-field">
+                        <input placeholder="Search Creator" name="query" class="form-controll p-2" />
+                        <button class="btn btn1"><i class="bi bi-search"></i></button>
+                    </div>
                 </form>
             </div>
         </div>
         <div class="row g-2">
             @foreach ($user as $users)
             <div class="col-lg-3 col-6">
-                <div class="card profile-card">
-                    <div class="background-block">
-                        <img src="img/{{$users->background}}" alt="img/{{$users->altbg}}" class="background" />
-                    </div>
-                    <div class="profile-thumb-block">
-                        <img src="img/{{$users->images}}" alt="{{$users->alt}}" class="profile img-fluid" />
-                    </div>
-                    <div class="card-content">
-                        <h2>{{ $users->name }}<small>{{ $users->about }}</small></h3>
-                            <div class="icon-block mb-2">
-                                <a href="{{$users->link}}"><i class="bi bi-facebook"></i>
-                                </a>
-                                <a href="{{$users->link2}}"><i class="bi bi-instagram"></i>
-                                </a>
+                <div class="team">
+                    <a href="/userprofile/{{$users -> name}}" class="text-decoration-none text-dark">
+                        <div class="card profile-card">
+                            <div class="background-block">
+                                <img src="img/userimages/{{$users->background}}" alt="img/userimages/{{$users->altbg}}" class="background" />
                             </div>
-                            <a href="/profile/{{$users -> name}}" class="button-modern">
-                                Visit   
-                            </a>
-                    </div>
+                            <div class="profile-thumb-block">
+                                <img src="img/userimages/{{$users->images}}" alt="{{$users->alt}}" class="profile img-fluid" />
+                            </div>
+                            <div class="card-content">
+                                <h2>{{ $users->name }}<small>{{ $users->about }}</small></h3>
+                                    <div class="icon-block">
+                                        <a href="{{$users->link}}"><i class="bi bi-facebook"></i>
+                                        </a>
+                                        <a href="{{$users->link2}}"><i class="bi bi-instagram"></i>
+                                        </a>
+                                    </div>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
+
             @endforeach
         </div>
     </div>
